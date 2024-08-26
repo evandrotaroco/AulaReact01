@@ -10,7 +10,6 @@ export default class Data extends Component{
 
     //fase de montagem
     componentDidMount(){
-        console.log("O componente foi montado.");
         this.dataAtual = new Date().toLocaleString();
     }
 
