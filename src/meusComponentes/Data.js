@@ -14,17 +14,10 @@ export default class Data extends Component{
 
     //fase de montagem
     componentDidMount(){
-        console.log("O componente foi montado.");
-        //Não e permitido atualizar o estado do componente de forma direta
-        //this.state = ...
-        this.setState({
-            dataAtual: new Date().toLocaleString()
-        })
+        this.dataAtual = new Date().toLocaleString();
     }
 
     componentDidUpdate(){
-        console.log("O componente foi atualizado.");
-        
         setTimeout(()=>{
             this.setState({
                 dataAtual: new Date().toLocaleString()
